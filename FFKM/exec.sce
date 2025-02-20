@@ -2,7 +2,7 @@
 // macOS version 20/02/2025 
 
 
-cd /Applications/FFKM/;
+cd C:\FFKM
 
 clear
 
@@ -31,34 +31,34 @@ Voc1=evstr(resultados(1));
 
 tic();
 
-exec('/Applications/FFKM/centrost.sci');
+exec('C:\FFKM\centrost.sci');
 
-exec('/Applications/FFKM/values.sci');
+exec('C:\FFKM\values.sci');
 
-exec('/Applications/FFKM/printxb.sci');
+exec('C:\FFKM\printxb.sci');
 
-exec('/Applications/FFKM/printcenters.sci');
+exec('C:\FFKM\printcenters.sci');
 
-exec('/Applications/FFKM/mean.sci');
-
-
-exec('/Applications/FFKM/angulos.sci');
+exec('C:\FFKM\mean.sci');
 
 
-exec('/Applications/FFKM/myfunc.sci');
-
-exec('/Applications/FFKM/dist.sci');
+exec('C:\FFKM\angulos.sci');
 
 
+exec('C:\FFKM\myfunc.sci');
 
-exec('/Applications/FFKM/funczero.sci');
-
-exec('/Applications/FFKM/count.sci');
+exec('C:\FFKM\dist.sci');
 
 
-exec('/Applications/FFKM/fplot.sci');
-exec('/Applications/FFKM/plote.sci');
-exec('/Applications/FFKM/clus.sci');
+
+exec('C:\FFKM\funczero.sci');
+
+exec('C:\FFKM\count.sci');
+
+
+exec('C:\FFKM\fplot.sci');
+exec('C:\FFKM\plote.sci');
+exec('C:\FFKM\clus.sci');
 
 
 
@@ -97,9 +97,9 @@ centroth=[];
      while lwhi<=Voc1;
          
                   
-       exec('/Applications/FFKM/aleatorio.sce');
-       exec('/Applications/FFKM/heuristica32.sce');
-       exec('/Applications/FFKM/heuristica1.sce');
+       exec('C:\FFKM\aleatorio.sce');
+       exec('C:\FFKM\heuristica32.sce');
+       exec('C:\FFKM\heuristica1.sce');
        
         // End Fuzzy K-Means
        
@@ -255,7 +255,7 @@ disp("The optimal number of sets is: " + string(ka));
 
 disp("The minimum value of XB is: " + string(Kbest) );
 
-csvWrite(results, '/Applications/FFKM/Results/results.csv', ',');
+csvWrite(results, 'C:\FFKM\results.csv', ',');
 
 disp("The data was successfully exported to a CSV file located in the Results folder.");
 

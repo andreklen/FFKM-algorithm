@@ -111,6 +111,6 @@ end
 // Xie Beni calculation
  
  
-exec('/Applications/FFKM/medidas.sce');
+exec('C:\FFKM\medidas.sce');
 
 
